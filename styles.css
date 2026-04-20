@@ -109,7 +109,34 @@ ul li a:hover {
    height: 60vh;
   width: 30vh;
 }
+.containers {
+   border-style:solid;
+   border-color:rgb(0, 47, 255);  
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 0; 
+}
 
+.shadow {
+   border: solid;
+  border-color: rgb(0, 50, 0);
+  height: 60vh;
+  width: 65vh;
+  padding: 0 350px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+}
 
+.control {
+  border: solid;
+  border-color: #C74767;
+  height: 5vh;
+  width: 20px;
+  padding: 0 100px;
+  margin-top: 320px;
+}
 
   
