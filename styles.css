@@ -6,7 +6,7 @@
 
 /* Sign Up Page Styles */
 
-.container {
+.main-container {
     border: 3px solid green;
     min-height: 100vh;
     display: flex;
@@ -172,10 +172,6 @@ form .row {
     gap: 15px;
     flex-wrap: wrap;
 }
-
-.cards-btn {
-
-}
 /* Check-Out Page */
 
 /* Product View */
@@ -283,3 +279,65 @@ form .row {
     }
 }
 /* Product View */
+
+/* Product Page */
+
+.fifth-container {
+    border: 3px solid blue;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-text-section {
+    border: 3px solid yellow;
+    width: auto;
+    height: auto;
+}
+
+.products {
+    border: 3px solid indianred;
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.product-three-row {
+    border: 3px solid violet;
+    width: 30vw;
+    height: 70vh;
+}
+
+.product-three-row img {
+    width: 30vw;
+    height: auto;
+}
+
+.text-banner {
+    border: 3px solid salmon;
+    display: inline-block;
+}
+
+.image-section-content {
+    border: 3px solid pink;
+    height: 65vh;
+
+}
+
+@media (max-width: 873px) {
+    .products {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100vw;
+    }
+    .product-three-row {
+        width: auto;
+        height: 70vh;
+    }
+    .product-three-row img {
+        width: 100vw;
+    }
+}
+/* Product Page */
