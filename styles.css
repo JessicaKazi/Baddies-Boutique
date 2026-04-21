@@ -191,6 +191,27 @@ ul li a:hover {
    
 }
 
+.containered {
+  border-style:solid;
+   border-color:rgb(0, 47, 255);  
+  /* height: 130vh; */
+  display: grid;
+  grid-template-columns: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  /* margin-bottom: 10px; */
+}
+
+@media (max-width: 879px) {
+    .document {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+  }
+
 /* @media (min-width: 700px) {
   .shadow { 
     width: 400px;
