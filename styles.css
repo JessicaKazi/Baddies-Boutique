@@ -197,3 +197,346 @@ ul li a:hover {
    }
 } */ 
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Sign Up Page Styles */
+
+.main-container {
+    border: 3px solid green;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.log-container {
+    border: 3px solid red;
+    height: 350px;
+    width: 500px;
+    border-radius: 40px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.title {
+    border: 3px solid brown;
+    height: 5vh;
+    width: auto;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    position: relative;
+}
+
+.log-in-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-container {
+    border: 3px solid yellow;
+    min-width: 300px;
+    min-height: 200px;
+    position: relative;
+    margin-top: 1rem;
+}
+
+/* Sign Up Page Styles */
+
+/* Profile Page Styles */
+
+.second-container {
+    border: 3px solid green;
+    min-height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile {
+    border: 3px solid purple;
+    width: 100vw;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.image-icon {
+    border: 3px solid pink;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 30px;
+    margin: 3vmin 7vmin;
+}
+
+.title-one {
+    border: 3px blue solid;
+    height: 20vh;
+    width: 20vw;
+    border-radius: 30px;
+    margin: 3vmin 7vmin;
+}
+
+.description-one{
+    border: 3px solid red;
+    width: 40vw;
+    height: 10vh;
+}
+
+.description-two{
+    border: 3px solid red;
+    width: 40vw;
+    height: 10vh;
+}
+
+.order-history {
+    border: 3px brown solid;
+    width: 100vw;
+    min-height: 60vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-two {
+    border: 3px solid brown;
+    height: 20vh;
+    width: 20vw;
+    border-radius: 30px;
+    margin: 3vmin 0;
+}
+
+.history-container {
+    border: 3px solid yellow;
+    width: auto;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+}
+
+.history-image {
+    border: 3px pink solid;
+    width: 30vw;
+    height: 50vh;
+}
+
+@media (max-width: 873px) {
+    .profile {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-icon {
+        height: 10vh;
+    }
+
+}
+
+/* Profile Page Styles */
+
+/* Check-Out Page */
+
+.third-container {
+    border: 3px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+.third-container form {
+    width: 700px;
+    padding: 40px;
+    border: 3px solid blue;
+    border-radius: 10px;
+}
+
+form .row {
+    border: 3px solid brown;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+/* Check-Out Page */
+
+/* Product View */
+
+.fourth-container {
+    border: 3px solid green;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-section {
+    border: 3px solid red;
+    width: 80vw;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-info-content {
+    border: 3px solid purple;
+    width: 50vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.title-section-one {
+    border: 3px solid brown;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.image-content {
+    border: 3px solid blue;
+    height: 80vh;
+    width: 30vw;
+}
+
+.product-description-content {
+    border: 3px pink solid;
+    height: 80vh;
+    width: 20vw;
+}
+
+.product-description-content-one {
+    border: 3px solid yellow;
+    margin: 3vmin 0;
+}
+
+.product-description-content-two {
+    border: 3px solid green;
+}
+
+.product-description-content-two a {
+    text-decoration: none;
+}
+
+.discount {
+    text-decoration: line-through;
+    padding-left: 10px;
+    color: grey;
+}
+
+.discount:hover {
+    color: red;
+}
+
+.product-description-content-three {
+    border: 3px solid purple;
+      margin: 3vmin 0;
+}
+
+.product-description-content-four {
+    border: 3px solid orange;
+      margin: 3vmin 0;
+      display: inline-block;
+}
+
+.product-description-content-five {
+    border: 3px solid orangered;
+    display: inline-block;
+}
+
+.product-description-content-six {
+    border: 3px olivedrab solid;
+}
+
+@media (max-width: 879px) {
+    .product-info-content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .image-content {
+        width: auto;
+    }
+    .product-description-content {
+        width: auto;
+        height: auto;
+    }
+}
+/* Product View */
+
+/* Product Page */
+
+.fifth-container {
+    border: 3px solid blue;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-text-section {
+    border: 3px solid yellow;
+    width: auto;
+    height: auto;
+}
+
+.products {
+    border: 3px solid indianred;
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.product-three-row {
+    border: 3px solid violet;
+    width: 30vw;
+    height: 70vh;
+}
+
+.product-three-row img {
+    width: 30vw;
+    height: auto;
+}
+
+.text-banner {
+    border: 3px solid salmon;
+    display: inline-block;
+}
+
+.image-section-content {
+    border: 3px solid pink;
+    height: 65vh;
+
+}
+
+@media (max-width: 873px) {
+    .products {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100vw;
+    }
+    .product-three-row {
+        width: auto;
+        height: 70vh;
+    }
+    .product-three-row img {
+        width: 100vw;
+    }
+}
+/* Product Page */
