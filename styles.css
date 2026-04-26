@@ -1,12 +1,16 @@
-
-body,html {
-  box-sizing: border-box;
-    overflow-x: hidden;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Prompt", sans-serif;
+    font-style: normal;
+}
 
-/* .nav-bar {
-  background-color: #f0eaec;
+nav {
+  background-color: #C74767;
 }
 
 ul {
@@ -30,13 +34,15 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #000;
-
-} */
+    background-color: #D16C85;
+    color: #ffebcd;
+    text-decoration: underline;
+    transition: 0.2s;
+}
 
 .container {
-    border-style:solid;
-   border-color:rgb(0, 47, 255);  
+  border-style:solid;
+  border-color:rgb(0, 47, 255);  
   height: 370vh;
   display: grid;
   grid-template-columns: auto;
@@ -193,7 +199,7 @@ ul li a:hover {
 
 .containered {
   border-style:solid;
-   border-color:rgb(0, 47, 255);  
+  border-color:rgb(0, 47, 255);  
   /* height: 130vh; */
   display: grid;
   grid-template-columns: auto;
@@ -218,40 +224,105 @@ ul li a:hover {
    }
 } */ 
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 /* Sign Up Page Styles */
 
 .main-container {
-    border: 3px solid green;
+    /* border: 3px solid green; */
     min-height: 100vh;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
 .log-container {
-    border: 3px solid red;
+    border: 3px solid #C74767;
     height: 350px;
     width: 500px;
     border-radius: 40px;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-content: center;
+    background-color: #ffebcd;
+}
+
+.profile-icon {
+    display: block;
+    width: 30px;
+   justify-content: space-between;
+}
+
+hr {
+    margin: 1em 0;
+}
+
+.heading-title {
+   color: #C74767;
+   text-decoration: underline;
+   text-align: center;
+   animation: flashing  5s 750ms linear infinite;;
+}
+
+@keyframes flashing {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
 }
 
 .title {
-    border: 3px solid brown;
-    height: 5vh;
+    /* border: 3px solid brown; */
+    height: auto;
     width: auto;
     margin-top: 1rem;
-    margin-left: 4rem;
     position: relative;
+    text-align: center;
+}
+
+.title:hover {
+    color: #C74767;
+    transition: .3s;
 }
 
 .log-in-section {
@@ -265,11 +336,44 @@ ul li a:hover {
 }
 
 .label-container {
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     min-width: 300px;
     min-height: 200px;
     position: relative;
     margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-sub-one {
+    background-color: #C74767;
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+    width: 10vmin;
+}
+
+.btn-sub-one:hover {
+    color: white;
+    background-color: #D16C85;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.log-in-section label {
+    text-align: center;
+}
+
+.log-in-section label:hover {
+    color: #C74767;
+    transition: .3s;
+}
+
+.log-in-section input {
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
 }
 
 /* Sign Up Page Styles */
@@ -363,7 +467,6 @@ ul li a:hover {
     .image-icon {
         height: 10vh;
     }
-
 }
 
 /* Profile Page Styles */
@@ -371,8 +474,8 @@ ul li a:hover {
 /* Check-Out Page */
 
 .third-container {
-    border: 3px solid green;
-    display: flex;
+    /* border: 3px solid green; */
+    display: grid;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -382,15 +485,93 @@ ul li a:hover {
 .third-container form {
     width: 700px;
     padding: 40px;
-    border: 3px solid blue;
+    border: 3px solid #C74767;
     border-radius: 10px;
+    background-color: blanchedalmond;
+}
+
+.second-heading-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.second-heading-title:hover {
+    color: #C74767;
+    transition: .3s;
 }
 
 form .row {
-    border: 3px solid brown;
+    /* border: 3px solid brown; */
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+}
+
+.row .column {
+    flex: 1 1 250px;
+}
+
+.column .title {
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.column .input-box {
+    margin: 15px 0;
+}
+
+.input-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.flex .input-box {
+    margin-top: 5px;
+}
+
+.input-box img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+form .cards-btn {
+    width: 100%;
+    padding: 12px;
+    background: #C74767;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form .cards-btn:hover {
+    background: #D16C85;
+}
+
+@media (max-width: 737px) {
+    .third-container form {
+        width: auto;
+    }
 }
 /* Check-Out Page */
 
@@ -417,7 +598,7 @@ form .row {
 .product-info-content {
     border: 3px solid purple;
     width: 50vw;
-    height: 80vh;
+    height: auto;
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -431,8 +612,13 @@ form .row {
 
 .image-content {
     border: 3px solid blue;
-    height: 80vh;
+    height: auto;
     width: 30vw;
+}
+
+.image-content img {
+    width: 30vw;
+
 }
 
 .product-description-content {
@@ -471,8 +657,8 @@ form .row {
 
 .product-description-content-four {
     border: 3px solid orange;
-      margin: 3vmin 0;
-      display: inline-block;
+    margin: 3vmin 0;
+    display: inline-block;
 }
 
 .product-description-content-five {
@@ -503,21 +689,39 @@ form .row {
 /* Product Page */
 
 .fifth-container {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     min-height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: blanchedalmond;
 }
 
 .second-text-section {
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     width: auto;
     height: auto;
 }
 
+.title-fourth-section {
+    text-align: center;
+    color: #C74767;
+    margin: 1vmin 0;
+    cursor: pointer;
+}
+
+.title-fourth-section:hover {
+    color: #D16C85;
+}
+
+.line-one {
+    background-color: #C74767;
+    height: 1vh;
+    border: none;
+}
+
 .products {
-    border: 3px solid indianred;
+    /* border: 3px solid indianred; */
     width: auto;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -525,25 +729,43 @@ form .row {
 }
 
 .product-three-row {
-    border: 3px solid violet;
+    /* border: 3px solid violet; */
     width: 30vw;
     height: 70vh;
+    /* background-color: #C74767; */
 }
 
 .product-three-row img {
-    width: 30vw;
+    width: 29vw;
     height: auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.product-three-row img:hover {
+    transform: scale(.9)
 }
 
 .text-banner {
-    border: 3px solid salmon;
+    /* border: 3px solid salmon; */
     display: inline-block;
+    font-weight: bold;
+    margin-top: 1vmin;
+    text-decoration: underline;
+}
+
+.text-banner:hover {
+    color: #C74767;
 }
 
 .image-section-content {
-    border: 3px solid pink;
+    /* border: 3px solid black; */
     height: 65vh;
+}
 
+.image-section-content img {
+    height: 65vh;
+    border-radius: 10px;
 }
 
 @media (max-width: 873px) {
