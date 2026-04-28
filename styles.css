@@ -2,11 +2,20 @@
 body,html {
   box-sizing: border-box;
     overflow-x: hidden;
-    background-color: rgb(255,235,205);
+    background-color: #C74767;
+}
+ 
+/* Nav-bar */
+.nav-bar {
+  background-color: #C74767;
 }
 
 .nav-bar {
-  background-color: #C74767;
+  border: solid;
+  border-color: #C08081;
+  margin-top: 15px;
+  height: 10vh;
+  width: 190vh;
 }
 
 ul {
@@ -31,19 +40,19 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #C08081;
+  background-color: #C74767;
 
 } 
 
+/* ends here */
+
 h1 {
-    font-size: 24px;
-    text-align: center;
+    font-size: 25px;
     margin-top: 10px;
+    color: #C74767;
 }
 .container {
-    border-style:solid;
-   border-color:rgb(0, 47, 255);  
-  height: 370vh;
+  height: 330vh;
   display: grid;
   grid-template-columns: auto;
   flex-direction: row;
@@ -52,40 +61,112 @@ h1 {
   padding: 0; 
  }
 
-.document {
-  border: solid;
-  border-color: rgb(0, 50, 0);
-  height: 90vh;
-  padding: 0 350px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 85px;
+/* Sign-up section */
+ .containered { 
+  height: 97vh;
+  display: flex; 
+  padding: 40px;
 }
 
-.fast1 {
-  border: solid;
-  border-color: #C74767;
-  height: 5vh;
-  width: 20px;
-  padding: 0 100px;
-  margin-top: 500px;
-}
 
-.nav-bar {
-  border: solid;
-  border-color: #C74767;
-  margin-top: 15px;
-  height: 10vh;
-  width: 190vh;
-}
+.rain {
+    width: 70vh;
+    border-radius: 10%;
+  }
 
-.mother {
-  border: solid;
-  border-color: rgb(0, 0, 0);
-  height: 510vh;
-  flex-direction: row;
-}
+  body {
+      background: #C08081;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .signup-box {
+      background: #C74767;
+      padding: 40px 32px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      text-align: center;
+      color: #ccc;
+    }
+    
+    .subtitle {
+      text-align: center;
+      color: #ccc;
+      margin-bottom: 32px;
+      font-size: 15px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #333;
+    }
+    
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #111;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    
+    input:focus {
+      outline: none;
+      border-color: #111;
+    }
+    
+    .signup-btn {
+      width: 100%;
+      padding: 14px;
+      background: #111;
+      color: #ccc;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    
+    .signup-btn:hover {
+      background: #C08081;
+    }
+    
+    .login-link {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 14px;
+      color: #ccc;
+    }
+    
+    .login-link a {
+      color: #111;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    
+    .login-link a:hover {
+      text-decoration: none;
+    }
+
+
+/* Index Section */
 .contain {
   height: 71vh;
   display: flex;
@@ -101,11 +182,11 @@ h1 {
 }
 
 .box1{
-  /* border: 2px solid #C74767; */
-  /* padding: 10px 5px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 2px solid #C74767;
+   border-radius: 5%;
+   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 60vh;
   width: 50vh;
   
@@ -114,16 +195,19 @@ h1 {
 video {
   /* justify-content: center;
   align-items: center; */
-  width: 60vh;
+  position: absolute;
+  width: 50vh;
    height: 57vh;
   margin-top: 7px;
-  border-radius: 30%;
+  border-radius: 25%;
 }
  
 .box2 {
     /* margin-top: 5px; */
    height: 60vh;
   width: 50vh;
+  border: 2px solid #C74767;
+  border-radius: 5%;
 }
 
 .box3 {
@@ -132,7 +216,51 @@ video {
   justify-content: center;
   height: 60vh;
   width: 50vh;
+   border: 2px solid #C74767;
+  border-radius: 5%;
 }
+
+
+.shop-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #e8d2d2;
+    background-color: #C74767;
+    font-weight: bold;
+    padding: 5px ;
+    border: 1px solid #ccc;
+    position: absolute;
+    text-align: center;
+    margin-top: 200px;
+    border-radius: 19px;
+  }
+  
+  .hover-text {
+    display: none;
+    color: #C08081;
+  }
+
+  .hp {
+    text-align: center;
+  height: 10vh;
+  width: 50vh;
+  margin-top: 10px;
+}
+  
+  
+  .shop-link:hover {
+    background-color: #C74767; 
+    border-radius: 10px;
+  }
+  
+  .shop-link:hover .price-text {
+    display: none; 
+  }
+  
+  .shop-link:hover .hover-text {
+    display: inline; 
+  }
+/*Index ends here*/
 
 .containers {
    border-style:solid;
@@ -164,13 +292,27 @@ video {
   margin-top: 320px;
 }
 
+/* Banner Section */
+.welcome {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 25px;
+  border-radius: 10%;
+}
 .banner {
   border: solid;
-  border-color: black;
-  height: 80vh;
-  margin-top: 90px;
-  width: 190vh;
+  border-color: #C74767;
+  border-radius: 2%;
+  height: 50vh;
+  margin-top: 50px;
+  width: 100vh;
 }
+
+.baddie {
+    width: 100vh;
+    height: 100%;
+}
+
 img {
     width: 47vh;
     height: 57vh;
@@ -178,21 +320,14 @@ img {
 }
 
 .topic {
-  border: solid;
-  border-color: #0dd338;
-  height: 10vh;
+  height: 1vh;
   width: 50vh;
-  margin-top: 20px;
-  justify-content: center;
+  margin-top: 10px;
+  /* display: flex; */
   text-align: center;
-}
-
-.hp {
-  border: solid;
-  border-color: #0adf14;
-  height: 10vh;
-  width: 50vh;
-  margin-top: 50px;
+  justify-content: center;
+  position: absolute;
+  
 }
 
  @media (max-width: 600px){
@@ -211,19 +346,6 @@ img {
    
 }
 
-.containered {
-  border-style:solid;
-   border-color:rgb(0, 47, 255);  
-  /* height: 130vh; */
-  display: grid;
-  grid-template-columns: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0;
-  /* margin-bottom: 10px; */
-}
-
 @media (max-width: 879px) {
     .document {
         display: grid;
@@ -231,18 +353,6 @@ img {
         grid-template-rows: auto auto;
     }
   }
-
-/* @media (min-width: 700px) {
-  .shadow { 
-    width: 400px;
-   }
-} */ 
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
 /* Sign Up Page Styles */
 
@@ -565,6 +675,7 @@ form .row {
     height: 65vh;
 
 }
+/* Product page ends here*/
 
 @media (max-width: 873px) {
     .products {
@@ -581,3 +692,13 @@ form .row {
     }
 }
 /* Product Page */
+
+/* Cart Icon */
+  /* * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    } */
+    
+    
